@@ -66,53 +66,53 @@
     <!-- Нулевые задания: репозиторий -->
     <h2>0. Репозиторий на сервере</h2>
     <p>Файлы загружены в репозиторий GitHub, после чего размещены на учебном веб-сервере. Доступность файлов проверена в браузере по адресу учебного домена.</p>
-    <img src="0.1.png">
+    <img src="0.1.PNG">
     
-    <img src="0.2.png">
+    <img src="0.2.PNG">
     
-    <img src="0.3.png">
+    <img src="0.3.PNG">
 
     <!-- Задание 1 -->
     <h2>1. GET главной страницы (HTTP 1.0)</h2>
     <p>Скрин первого задания показывает отправку GET-запроса к главной странице через HTTP 1.0. Сервер вернул заголовки и содержимое страницы.</p>
     <p><strong>GET /zadanie2/index.php HTTP/1.0<br>Host: u82360.kubsu-dev.ru</strong></p>
-    <img src="1.png">
+    <img src="1.PNG">
 
     <!-- Задание 2 -->
     <h2>2. GET главной страницы (HTTP 1.1)</h2>
     <p>Скрин второго задания демонстрирует GET-запрос к той же странице через HTTP 1.1 с указанием Host. Ответ сервера подтверждает корректную работу протокола HTTP 1.1.</p>
     <p><strong>GET /zadanie2/index.php HTTP/1.1<br>Host: u82360.kubsu-dev.ru</strong></p>
-    <img src="2.png">
+    <img src="2.PNG">
 
     <!-- Задание 3 -->
     <h2>3. Определение размера файла file.tar.gz</h2>
     <p>Скрин третьего задания отображает HEAD-запрос к файлу file.tar.gz, где сервер вернул только заголовки. Основное внимание на Content-Length — размер файла в байтах.</p>
     <p><strong>HEAD /zadanie2/file.tar.gz HTTP/1.1<br>Host: u82360.kubsu-dev.ru</strong></p>
-    <img src="3.png">
+    <img src="3.PNG">
 
     <!-- Задание 4 -->
     <h2>4. Определение медиатипа image.png</h2>
     <p>Скрин четвертого задания показывает HEAD-запрос к изображению image.png, и сервер возвращает только заголовки. В заголовках виден Content-Type, указывающий, что это PNG-файл.</p>
     <p><strong>HEAD /zadanie2/image.png HTTP/1.1<br>Host: u82360.kubsu-dev.ru</strong></p>
-    <img src="4.png">
+    <img src="4.PNG">
 
     <!-- Задание 5 -->
     <h2>5. Отправка комментария через POST</h2>
     <p>Скрин пятого задания демонстрирует отправку комментария через POST на index.php. Сервер принял данные и вернул страницу с результатом.</p>
     <p><strong>POST /zadanie2/index.php HTTP/1.1<br>Host: u82360.kubsu-dev.ru<br>Content-Type: application/x-www-form-urlencoded<br>Content-Length: 19<br>comment=HelloWorld</strong></p>
-    <img src="5.png">
+    <img src="5.PNG">
 
     <!-- Задание 6 -->
     <h2>6. Получение первых 100 байт file.tar.gz</h2>
     <p>Скрин шестого задания отображает GET-запрос первых 100 байт файла file.tar.gz с использованием Range. Сервер вернул 206 Partial Content с указанным диапазоном.</p>
     <p><strong>GET /zadanie2/file.tar.gz HTTP/1.1<br>Host: u82360.kubsu-dev.ru<br>Range: bytes=0-99</strong></p>
-    <img src="6.png">
+    <img src="6.PNG">
 
     <!-- Задание 7 -->
     <h2>7. Определение кодировки index.php</h2>
     <p>Скрин седьмого задания показывает определение кодировки страницы index.php через просмотр заголовка Content-Type. В заголовках указано charset=UTF-8.</p>
     <p><strong>GET /zadanie2/index.php HTTP/1.1<br>Host: u82360.kubsu-dev.ru</strong></p>
-    <img src="7.png">
+    <img src="7.PNG">
 
 </body>
 </html>
